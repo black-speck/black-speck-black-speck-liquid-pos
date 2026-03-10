@@ -5,7 +5,7 @@ import {
   XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer
 } from "recharts";
 
-const API = const API = "https://liquid-pos-production-1636.up.railway.app/api";
+const API = "https://fulfilling-growth-production-60f9.up.railway.app/api";
 
 const SAMPLE_MONTHLY = [
   { month:"Jan",sales:32000 },{ month:"Feb",sales:47000 },{ month:"Mar",sales:38000 },
