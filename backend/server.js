@@ -204,5 +204,5 @@ app.get("/api/dashboard", async (req, res) => {
   }
 });
 
-const path = require("path"); app.use(express.static(path.join(__dirname, "../build"))); app.get("*", (req, res) => res.sendFile(path.join(__dirname, "../build/index.html"))); const PORT = process.env.PORT || 8080;
+const path = require("path"); app.use(express.static(path.join(__dirname, "../build"))); app.get("/(.*)", (req, res) => res.sendFile(path.join(__dirname, "../build/index.html"))); const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log("Server running on port " + PORT));
