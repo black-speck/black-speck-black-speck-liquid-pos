@@ -206,3 +206,4 @@ app.get("/api/dashboard", async (req, res) => {
 
 const path = require("path"); app.use(express.static(path.join(__dirname, "../build"))); app.use((req, res) => { res.sendFile(path.join(__dirname, "../build", "index.html")); });
 app.listen(PORT, () => console.log("Server running on port " + PORT));
+
